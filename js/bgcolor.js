@@ -71,8 +71,12 @@ for (let b = 1; b <= 6; b++) {
 }
 
 document.getElementById("clearHistory").addEventListener("click",function(){
-    let clear =document.getElementById("history").addEventListener("click",function(){
-        clear.removeChild("div")
-    })
+    let getP = document.getElementById("history");
+    let pElements = getP.querySelectorAll("p");
+    
+    for (let i = 0; i < pElements.length; i++) {
+      pElements[i].remove();
+    }
+
 })
 
