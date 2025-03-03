@@ -1,43 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hi</title>
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hi</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 </head>
+
 <body class="bg-[#F4F7FF] pt-3 space-y-4">
-    <header class="w-10/12 mx-auto flex justify-between items-center p-4 bg-white rounded-xl">
-        <div class="flex items-center p-4">
-          <img class="w-14 " src="assets/logo.png" alt="">
-          <div class="">
-            <h2 class="text-4xl">Dav<span class="font-bold">boad</span></h2>
-          </div>
-        </div>
-        <div class="">
-          <button id="index" class="bg-[#3752FD] text-2xl text-white  px-4 py-2 rounded-xl cursor-pointer">main</button>
-         
-          </div>
-        </div>
-      </header>
-      <main class="w-10/12 mx-auto space-y-4 p-4 rounded-xl">
-        <div class=" bg-white p-4 space-y-3">
-            <h1 class="border-b-4 border-dashed  pb-3 text-2xl font-bold border-gray-300">Question-1: What are the different ways to select an element in the DOM?</h1>
-            <p class="text-xl">PH question ar ans </p>
-        </div>
-        <div class=" bg-white p-4 space-y-3">
-            <h1 class="border-b-4 border-dashed  pb-3 text-2xl font-bold border-gray-300">PH question</h1>
-            <p class="text-xl">PH question ar ans </p>
-        </div>
-        <div class=" bg-white p-4 space-y-3">
-            <h1 class="border-b-4 border-dashed  pb-3 text-2xl font-bold border-gray-300">Question-1: What are the different ways to select an element in the DOM?</h1>
-            <p class="text-xl">PH question ar ans </p>
-        </div>
-        <div class=" bg-white p-4 space-y-3">
-            <h1 class="border-b-4 border-dashed  pb-3 text-2xl font-bold border-gray-300">PH question</h1>
-            <p class="text-xl">PH question ar ans </p>
-        </div>
-      </main>
-<script src="./js/app.js"></script>
+  <header class="w-10/12 mx-auto flex justify-between items-center p-4 bg-white rounded-xl">
+    <div class="flex items-center p-5">
+      <img class="w-14 " src="assets/logo.png" alt="">
+      <div class="">
+        <h2 class="text-4xl">Dav<span class="font-bold">boad</span></h2>
+      </div>
+    </div>
+    <div class="">
+      <button id="index" class="bg-[#3752FD] text-2xl text-white  px-4 py-2 rounded-xl cursor-pointer">main</button>
+
+    </div>
+    </div>
+  </header>
+  <main class="w-10/12 mx-auto space-y-4 p-4 rounded-xl">
+    <div class=" bg-white p-4 space-y-3">
+      <h1 class="border-b-4 border-dashed  pb-3 text-2xl font-bold border-gray-300">Question-1: What are the different
+        ways to select an element in the DOM?</h1>
+      <p class="text-xl"> Dom এর elemeent select করার জন্য কয়েকটি উপায় আসে যেমন:
+        1. GetElementsByTagName()
+        2. GetElementsByClassName()
+        3. getElementById()
+        4. querySelector()
+        5. querySelectorAll()
+      </p>
+    </div>
+    <div class=" bg-white p-4 space-y-3">
+      <h1 class="border-b-4 border-dashed  pb-3 text-2xl font-bold border-gray-300">Question-3: What is the difference between innerHTML, innerText, and textContent ?</h1>
+      <p class="text-xl"> 1.innerHtml দিয়ে শৈলী বা স্ক্রিপ্ট এলিমেন্ট ছাড়া CSS লুকানো টেক্সট স্পেসিং এবং ট্যাগ ছাড়াই এলিমেন্টের টেক্সট কন্টেন্ট ব্যবহার করা যায়।
+        2.innerText  এই বৈশিষ্ট্যটি রেন্ডার করা টেক্সট কন্টেন্টের উপর ফোকাস করে। যখন  কোনও এলিমেন্টের কন্টেন্ট পড়ার জন্য innerText ব্যবহার করেন, তখন এটি স্ক্রিনে প্রদর্শিত টেক্সটটি যেমনটি দেখা যায় তেমনই ফেরত দেয়। এটি HTML ট্যাগগুলিকে উপেক্ষা করে। এবং এতে CSS স্টাইলের সাথে লুকানো টেক্সটও অন্তর্ভুক্ত থাকে না। 
+      3.textContent প্রপার্টিটি সমস্ত HTML ট্যাগ উপেক্ষা করে এবং শুধুমাত্র টেক্সট রিটার্ন করে। যদিও innerText স্ক্রিনে রেন্ডার করা টেক্সটটি পড়ে, textContent মার্কআপে থাকা টেক্সটটি পড়ে। এটি স্ক্রিনে রেন্ডার করা হোক বা না হোক, সমস্ত টেক্সট রিটার্ন করে।</p>
+    </div>
+    <div class=" bg-white p-4 space-y-3">
+      <h1 class="border-b-4 border-dashed  pb-3 text-2xl font-bold border-gray-300">Question-3: What is event delegation in the DOM?</h1>
+      <p class="text-xl">ইভেন্ট ডেলিগেশন বলতে বোঝায় ইভেন্ট প্রোপাগেশন (বাবলিং) ব্যবহার করে ইভেন্টের উৎপত্তিস্থলের উপাদানের চেয়ে DOM-এ উচ্চ স্তরে ইভেন্ট পরিচালনা করার প্রক্রিয়া। এটি  বর্তমানে বা ভবিষ্যতে বিদ্যমান উপাদানগুলির জন্য একটি একক ইভেন্ট লিসেনার সংযুক্ত করার অনুমতি দেয়। ইভেন্ট হ্যান্ডলিং ফাংশনের ভিতরে।</p>
+    </div>
+    <div class=" bg-white p-4 space-y-3">
+      <h1 class="border-b-4 border-dashed  pb-3 text-2xl font-bold border-gray-300">Question-4: What is event bubbling in the DOM?</h1>
+      <p class="text-xl">ইভেন্ট বাবলিং হল এক ধরণের DOM ইভেন্ট প্রোপাগেশন যেখানে ইভেন্টটি প্রথমে সবচেয়ে ভেতরের টার্গেট এলিমেন্টে ট্রিগার হয় এবং তারপর একই নেস্টিং হায়ারার্কিতে টার্গেট এলিমেন্টের পূর্বপুরুষদের (পিতামাতাদের) উপর ধারাবাহিকভাবে ট্রিগার হয় যতক্ষণ না এটি বাইরেরতম DOM এলিমেন্ট বা ডকুমেন্ট অবজেক্টে পৌঁছায় । </p>
+    </div>
+    <div class="bg-white p-4 space-y-3">
+      <h1 class="border-b-4 border-dashed  pb-3 text-2xl font-bold border-gray-300">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+    <p class="text-xl">একটি সূচক হল অ্যারেতে একটি উপাদানের অবস্থান। অ্যারের প্রথম উপাদানটির সূচক 0, দ্বিতীয় উপাদানটির সূচক 1, ইত্যাদি। একটি নির্দিষ্ট সূচকে উপাদান যোগ করতে,  স্প্লাইস পদ্ধতি ব্যবহার করতে পারেন। স্প্লাইস পদ্ধতি  একটি অ্যারেতে একটি নির্দিষ্ট সূচক থেকে উপাদান যোগ করতে এবং অপসারণ করতে দেয়।</p>
+    </div>
+  </main>
+  <script src="./js/app.js"></script>
 </body>
+
 </html>
